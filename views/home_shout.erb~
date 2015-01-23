@@ -1,19 +1,17 @@
 <html>
   <body>
-    <p>
-      <h2>Please input a 'shout'...</h2>
-    </p>
 <table>
     <form action="/" method="get">
 <tr><th><label>Your Password, Baby</label></th>
-      <td><input name="password" /></td></tr>
-<tr><th><label>Your Shout...</label></th>
-      <td><input name="shout" size="200" /></td></tr>
+      <td><input placeholder="Password, Baby! :-)" name="password" /></td></tr>
+      <td><input placeholder="Yo, SHOUT, Dude..." name="shout" size="200" /></td></tr>
       <tr><th><input type="submit" /></th></tr>
     </form>
 </table>
 <table><tr>
     <td><form action="/home" method="get"><button type="submit">Refresh</button></form>
+    <td>
+    <td><form action="/best" method="get"><button type="submit">Best</button></form>
     <td>
     <% if @a_message %>
           <h2><%= @a_message.to_s %></h2>
